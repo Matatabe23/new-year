@@ -8,7 +8,7 @@ import componentPanel from '@/components/Panel'
 
 const app = createApp(App)
 
-//Глобально в проекте регестрируем UI, Panel, Other компоненты
+//Глобально в проекте регестрируем UI, Panel компоненты
 const components = [...componentUI, ...componentPanel];
 components.forEach(component => {
 	app.component(component.name, component);
